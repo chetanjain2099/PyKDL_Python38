@@ -1,13 +1,8 @@
 :: Set Python paths
-cd ..\..\..
-set python3=%CD%\win64\Lib\site-packages
-cd setup
-
-:: Setup the environment paths
-call env.bat
+set python3=C:\Python38\Lib\site-packages
 
 :: Build kdl 
-cd Modules\PyKDL\orocos_kdl
+cd orocos_kdl
 set inc=%CD%\Eigen3
 rmdir /Q /s build
 mkdir build
